@@ -13,3 +13,13 @@ set signcolumn=yes
 if exists('+colorcolumn')
     set colorcolumn=81
 endif
+
+" Show line number and relative numbers
+set number
+set relativenumber
+
+" Use F1 to toggle line numbers
+nmap <F1> :set number! relativenumber! relativenumber?<cr>
+imap <F1> <C-O>:set number! relativenumber! relativenumber?<cr>
+
+

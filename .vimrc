@@ -8,3 +8,8 @@ call plug#end()
 " Git Gutter config
 " Always show git gutter
 set signcolumn=yes
+
+" Show 80 character column if we can
+if exists('+colorcolumn')
+    set colorcolumn=81
+endif

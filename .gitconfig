@@ -3,3 +3,24 @@
     email = jared@techsmix.net
 [core]
     symlinks = true
+[alias]
+    st = status
+    c = commit
+    ca = commit -a
+    cm = commit -m
+    cam = commit -am
+    br = branch
+    ls = branch
+    co = checkout
+    cd = checkout
+    df = diff
+    p = push
+    g = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    h = !git --no-pager log origin/master..HEAD --abbrev-commit --pretty=oneline
+    this = !git init && git add . && git commit -m \"initial commit\"
+    amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - -a --amend
+    r = !git ls-files -z --deleted | xargs -0 git rm
+    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1 => \\2/' | sort
+    diff = diff --check
+    root = rev-parse --show-toplevel
+    yolo = !git commit -am \"`curl -s http://whatthecommit.com/index.txt`\"

@@ -2,4 +2,5 @@
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
+Plug 'airblade/vim-gitgutter'
 call plug#end()

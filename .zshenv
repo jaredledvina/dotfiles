@@ -7,8 +7,8 @@ function _build_path() {
     local BIN_PATHS='/usr/bin:/bin'
     local ALL_BIN_PATHS="$SBIN_PATHS:$BIN_PATHS"
     local BREW_PATHS='/opt/brew/bin:/opt/brew/sbin'
-    if [ -d /usr/local/MacGPG2 ]; then
-        local GPG_PATH='/usr/local/MacGPG2'
+    if [ -d /usr/local/MacGPG2/bin ]; then
+        local GPG_PATH='/usr/local/MacGPG2/bin'
     else
         GPG_PATH=''
     fi

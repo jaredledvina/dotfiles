@@ -7,4 +7,4 @@ call plug#end()
 
 " Git Gutter config
 " Always show git gutter
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes

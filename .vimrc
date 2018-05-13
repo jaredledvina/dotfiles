@@ -1,0 +1,5 @@
+" Plug managed Vim plugins
+" https://github.com/junegunn/vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-sensible'
+call plug#end()

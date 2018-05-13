@@ -1,3 +1,5 @@
 [user]
     name = Jared Ledvina
     email = jared@techsmix.net
+[core]
+    symlinks = true

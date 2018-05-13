@@ -1,4 +1,4 @@
 if [ $(which gpgconf > /dev/null) ]; then
-  export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+  export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh
   gpgconf --launch gpg-agent
 fi

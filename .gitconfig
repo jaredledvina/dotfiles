@@ -1,6 +1,9 @@
 [user]
     name = Jared Ledvina
     email = jared@techsmix.net
+    signingKey = 0xE892006E1BB9180C
+[commit]
+    gpgSign = true
 [core]
     symlinks = true
 [alias]

@@ -8,6 +8,7 @@
     c = commit
     ca = commit -a
     cm = commit -m
+    cms = commit -S -m 
     cam = commit -am
     br = branch
     ls = branch

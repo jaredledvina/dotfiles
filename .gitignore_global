@@ -1,0 +1,59 @@
+# Vim Global Ignores
+# https://github.com/github/gitignore/blob/c5437d0b115bdfd09af543689b9eed79888db2e3/Global/Vim.gitignore
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
+
+# Vagrant Global Ignores
+# https://github.com/github/gitignore/blob/c5437d0b115bdfd09af543689b9eed79888db2e3/Global/Vagrant.gitignore
+# General
+.vagrant/
+
+# macOS Global Ignores
+# https://github.com/github/gitignore/blob/c5437d0b115bdfd09af543689b9eed79888db2e3/Global/macOS.gitignore
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+# Ansible Global Ignores
+# https://github.com/github/gitignore/blob/c5437d0b115bdfd09af543689b9eed79888db2e3/Global/Ansible.gitignore
+*.retry

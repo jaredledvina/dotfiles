@@ -6,6 +6,7 @@
     gpgSign = true
 [core]
     symlinks = true
+    excludesfile = ~/.gitignore_global
 [alias]
     st = status
     c = commit

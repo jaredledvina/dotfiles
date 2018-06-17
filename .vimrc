@@ -27,6 +27,6 @@ endif
 set number
 set relativenumber
 
-" Use F1 to toggle line numbers 
+" Use F1 to toggle line numbers
 nmap <F1> :set number! relativenumber! relativenumber?<cr>
 imap <F1> <C-O>:set number! relativenumber! relativenumber?<cr>

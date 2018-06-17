@@ -5,6 +5,7 @@ Plug 'tpope/vim-sensible'
 Plug 'airblade/vim-gitgutter'
 Plug 'pearofducks/ansible-vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'w0rp/ale'
 call plug#end()
 
 " Git Gutter config

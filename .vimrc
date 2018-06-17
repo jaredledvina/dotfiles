@@ -4,11 +4,16 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'airblade/vim-gitgutter'
 Plug 'pearofducks/ansible-vim'
+Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
 
 " Git Gutter config
 " Always show the sign column for Git Gutter
 set signcolumn=yes
+
+" vim-better-whitespace config
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
 
 " Force a fast tty connection
 set ttyfast

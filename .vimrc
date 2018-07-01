@@ -31,3 +31,6 @@ set relativenumber
 " Use F1 to toggle line numbers
 nmap <F1> :set number! relativenumber! relativenumber?<cr>
 imap <F1> <C-O>:set number! relativenumber! relativenumber?<cr>
+
+" Get the 2-space YAML as the default when hit carriage return after the colon
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab

@@ -6,6 +6,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'pearofducks/ansible-vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'w0rp/ale'
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 " Git Gutter config

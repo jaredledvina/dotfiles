@@ -29,6 +29,9 @@ endif
 set number
 set relativenumber
 
+" Offset scroll by 10 lines
+set scrolloff=10
+
 " Use F1 to toggle line numbers
 nmap <F1> :set number! relativenumber! relativenumber?<cr>
 imap <F1> <C-O>:set number! relativenumber! relativenumber?<cr>

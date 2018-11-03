@@ -1,0 +1,4 @@
+# Various environment variables to export
+# https://unix.stackexchange.com/q/4859
+export VISUAL="vim"
+export EDITOR="$VISUAL"

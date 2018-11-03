@@ -7,6 +7,7 @@
 [core]
     symlinks = true
     excludesfile = ~/.gitignore_global
+    editor = vim
 [alias]
     st = status
     c = commit -s

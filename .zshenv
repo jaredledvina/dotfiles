@@ -1,5 +1,6 @@
 export LANG='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
+export GOPATH=$HOME/Projects/go
 
 function _build_path() {
     local LOCAL_PATHS='/usr/local/sbin:/usr/local/bin'

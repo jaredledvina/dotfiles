@@ -5,6 +5,7 @@ Plug 'tpope/vim-sensible'
 Plug 'airblade/vim-gitgutter'
 Plug 'pearofducks/ansible-vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 " Git Gutter config

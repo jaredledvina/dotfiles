@@ -5,8 +5,6 @@ Plug 'tpope/vim-sensible'
 Plug 'airblade/vim-gitgutter'
 Plug 'pearofducks/ansible-vim'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'w0rp/ale'
-Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 " Git Gutter config
@@ -16,6 +14,9 @@ set signcolumn=yes
 " vim-better-whitespace config
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
+
+" pearofducks/ansible-vim
+let g:ansible_unindent_after_newline = 1
 
 " Force a fast tty connection
 set ttyfast

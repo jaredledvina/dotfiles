@@ -9,6 +9,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
+Plug 'vim-ruby/vim-ruby'
 call plug#end()
 
 " Git Gutter config
@@ -42,4 +43,8 @@ nmap <F1> :set number! relativenumber! relativenumber?<cr>
 imap <F1> <C-O>:set number! relativenumber! relativenumber?<cr>
 
 " Get the 2-space YAML as the default when hit carriage return after the colon
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2
+" Get the 2-space Ruby as the default when hit carriage return after the colon
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
+" Get the 4-space Python as the default when hit carriage return after the colon
+autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4

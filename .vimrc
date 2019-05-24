@@ -7,6 +7,8 @@ Plug 'pearofducks/ansible-vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-bundler'
 call plug#end()
 
 " Git Gutter config

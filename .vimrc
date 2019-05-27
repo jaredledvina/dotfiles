@@ -78,7 +78,6 @@ set pastetoggle=<F2>
 map - :NERDTreeToggle<CR>
 " Leader + r to jump to the nerdtree window from any other window
 map <leader>r :NERDTreeFind<cr>
-autocmd BufWinEnter * NERDTreeFind
 " ] inside any open file in vim will jump to the nerdtree and highlight where that file is -> very useful when you have multiple files open at once
 map ] :NERDTreeFind<CR>
 " Open nerdtree if vim was opened without file

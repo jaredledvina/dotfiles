@@ -53,6 +53,27 @@ nnoremap <silent> <C-z> :FZF<CR>
 " Apparently I'm supposed to be using ctags
 set tags=tags
 
+" No need to be compatible with vi
+set nocompatible
+
+" Delete comment character when joining commented lines
+set formatoptions+=j
+
+" Enable backup files and store them in ~/.vim/backup
+set backup
+set writebackup
+set backupdir=~/.vim/swap
+
+" Enable swap files and store them in ~/.vim/swap
+set directory=~/.vim/swap
+
+" Leader as space
+let mapleader = "\<Space>"
+
+" Toggle paste with F2
+nnoremap <F2> :set invpaste paste?<cr>
+set pastetoggle=<F2>
+
 " open/close nerdtree window
 map - :NERDTreeToggle<CR>
 " Leader + r to jump to the nerdtree window from any other window

@@ -52,7 +52,7 @@ nnoremap <silent> <C-z> :FZF<CR>
 set tags=tags
 
 " open/close nerdtree window
-map — :NERDTreeToggle<CR>
+map - :NERDTreeToggle<CR>
 " Leader + r to jump to the nerdtree window from any other window
 map <leader>r :NERDTreeFind<cr>
 autocmd BufWinEnter * NERDTreeFind

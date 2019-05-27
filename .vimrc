@@ -48,7 +48,7 @@ set formatoptions+=j
 " Enable backup files and store them in ~/.vim/backup
 set backup
 set writebackup
-set backupdir=~/.vim/swap
+set backupdir=~/.vim/backup
 
 " Enable swap files and store them in ~/.vim/swap
 set directory=~/.vim/swap

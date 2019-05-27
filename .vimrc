@@ -11,6 +11,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
 Plug 'vim-ruby/vim-ruby'
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 call plug#end()
@@ -58,6 +59,9 @@ map <leader>r :NERDTreeFind<cr>
 autocmd BufWinEnter * NERDTreeFind
 " ] inside any open file in vim will jump to the nerdtree and highlight where that file is -> very useful when you have multiple files open at once
 map ] :NERDTreeFind<CR>
+" Open nerdtree if vim was opened without file
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Get the 2-space YAML as the default when hit carriage return after the colon
 autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2

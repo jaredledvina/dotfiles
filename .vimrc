@@ -10,6 +10,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
 Plug 'vim-ruby/vim-ruby'
+Plug 'scrooloose/nerdtree'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 call plug#end()
@@ -43,6 +44,20 @@ set scrolloff=10
 " Use F1 to toggle line numbers
 nmap <F1> :set number! relativenumber! relativenumber?<cr>
 imap <F1> <C-O>:set number! relativenumber! relativenumber?<cr>
+
+" Use Ctrl+z to use fzf for search
+nnoremap <silent> <C-z> :FZF<CR>
+
+" Apparently I'm supposed to be using ctags
+set tags=tags
+
+" open/close nerdtree window
+map — :NERDTreeToggle<CR>
+" Leader + r to jump to the nerdtree window from any other window
+map <leader>r :NERDTreeFind<cr>
+autocmd BufWinEnter * NERDTreeFind
+" ] inside any open file in vim will jump to the nerdtree and highlight where that file is -> very useful when you have multiple files open at once
+map ] :NERDTreeFind<CR>
 
 " Get the 2-space YAML as the default when hit carriage return after the colon
 autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2

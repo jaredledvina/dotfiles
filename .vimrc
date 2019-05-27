@@ -10,6 +10,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
 Plug 'vim-ruby/vim-ruby'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " Git Gutter config
@@ -46,5 +48,6 @@ imap <F1> <C-O>:set number! relativenumber! relativenumber?<cr>
 autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2
 " Get the 2-space Ruby as the default when hit carriage return after the colon
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
+autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
 " Get the 4-space Python as the default when hit carriage return after the colon
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4

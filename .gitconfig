@@ -30,3 +30,5 @@
     diff = diff --check
     root = rev-parse --show-toplevel
     yolo = !git commit -s -am \"`curl -s http://whatthecommit.com/index.txt`\"
+[pull]
+    rebase = true

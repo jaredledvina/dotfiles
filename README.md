@@ -1,4 +1,12 @@
 # dotfiles
 My personal dotfiles repo 
 
-I've chosen to start over with my personal dotfiles configuration/setup. This will be the main repo. 
+## Setup
+0. `cd $HOME`
+1. `git clone https://github.com/akerl/....git`
+2. `mkdir Projects && cd Projects`
+3. `git clone git@github.com:jaredledvina/dotfiles.git`
+4. `~/.../bin/... conf ~/Projects/dotfiles/.dotdotdot.conf`
+5. `~/.../bin/... update`
+6. `~/.../bin/... install`
+7. Open a new session and enjoy

@@ -1,4 +1,12 @@
 if type gpgconf > /dev/null; then
-  export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-  gpgconf --launch gpg-agent
+    export GPG_TTY=$(tty)
+    
+    # Ensure the gpg-agent is running
+    gpgconf --launch gpg-agent
+
+    # Ensure SSH uses the gpg SSH socket
+    export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+
+    # Update gpg-agent's configure TTY to prompt for the pin in
+    gpg-connect-agent updatestartuptty /bye > /dev/null
 fi

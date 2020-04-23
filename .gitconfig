@@ -3,7 +3,7 @@
     email = jared@techsmix.net
     signingKey = 0xE892006E1BB9180C
 [commit]
-    gpgSign = true
+    gpgSign = false
 [core]
     symlinks = true
     excludesfile = ~/.gitignore_global
@@ -12,7 +12,7 @@
     st = status
     c = commit -s
     ca = commit -a
-    cm = commit -s -m
+    cm = commit -m
     cms = commit -s -S -m
     cam = commit -s -am
     br = branch

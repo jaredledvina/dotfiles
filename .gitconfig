@@ -1,9 +1,9 @@
 [user]
     name = Jared Ledvina
     email = jared@techsmix.net
-    signingKey = 0xE892006E1BB9180C
+    signingKey = 0x45EAE797D5DD3BA4
 [commit]
-    gpgSign = false
+    gpgSign = true
 [core]
     symlinks = true
     excludesfile = ~/.gitignore_global
@@ -12,7 +12,7 @@
     st = status
     c = commit -s
     ca = commit -a
-    cm = commit -m
+    cm = commit -m -s
     cms = commit -s -S -m
     cam = commit -s -am
     br = branch

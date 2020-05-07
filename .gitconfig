@@ -12,7 +12,7 @@
     st = status
     c = commit -s
     ca = commit -a
-    cm = commit -m -s
+    cm = commit -s -m
     cms = commit -s -S -m
     cam = commit -s -am
     br = branch

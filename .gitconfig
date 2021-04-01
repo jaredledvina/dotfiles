@@ -3,7 +3,7 @@
     email = jared@techsmix.net
     signingKey = 0x45EAE797D5DD3BA4
 [commit]
-    gpgSign = true
+    gpgsign = true
 [core]
     symlinks = true
     excludesfile = ~/.gitignore_global
@@ -30,5 +30,10 @@
     diff = diff --check
     root = rev-parse --show-toplevel
     yolo = !git commit -s -am \"`curl -s http://whatthecommit.com/index.txt`\"
+    wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
 [pull]
     rebase = true
+[tag]
+    forceSignAnnotated = true
+[include]
+    path = ~/.gitconfig.d/local

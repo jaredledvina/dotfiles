@@ -1,9 +1,0 @@
-if type gpgconf > /dev/null; then
-    export GPG_TTY=$(tty)
-    
-    # Ensure the gpg-agent is running
-    gpgconf --launch gpg-agent
-
-    # Ensure SSH uses the gpg SSH socket
-    export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-fi

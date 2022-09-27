@@ -15,6 +15,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'farmergreg/vim-lastplace'
 call plug#end()
 
 " Git Gutter config

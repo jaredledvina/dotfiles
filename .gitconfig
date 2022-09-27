@@ -1,9 +1,6 @@
 [user]
     name = Jared Ledvina
     email = jared@techsmix.net
-    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAAIQff+o6cS70+bpt8f2wrqmTKqojIeBEjXnL8XfJOb
-[commit]
-    gpgsign = true
 [core]
     symlinks = true
     excludesfile = ~/.gitignore_global
@@ -39,7 +36,3 @@
     path = ~/.gitconfig.d/local
 [init]
     defaultBranch = main
-[gpg]
-    format = ssh
-[gpg "ssh"]
-    program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign

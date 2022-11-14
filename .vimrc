@@ -37,6 +37,9 @@ set ttyfast
 set number
 set relativenumber
 
+" Configure whitespace characters
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+
 " Apparently I'm supposed to be using ctags
 set tags=tags
 

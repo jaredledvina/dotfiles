@@ -21,11 +21,14 @@ My personal dotfiles repo
 ```
 ❯ cat ~/.gitconfig.d/local
 [user]
-    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAAIQff+o6cS70+bpt8f2wrqmTKqojIeBEjXnL8XfJOb
-[commit]
-    gpgsign = true
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAAIQff+o6cS70+bpt8f2wrqmTKqojIeBEjXnL8XfJOb
+
 [gpg]
-    format = ssh
+  format = ssh
+
 [gpg "ssh"]
-    program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
 ```

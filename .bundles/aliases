@@ -1,2 +1,4 @@
 alias dot='$HOME/.../bin/...'
-alias ctags="$(brew --prefix)/bin/ctags"
+if command -v brew >/dev/null 2>&1; then
+  alias ctags="$(brew --prefix)/bin/ctags"
+fi
